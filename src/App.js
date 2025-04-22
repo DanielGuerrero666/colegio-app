@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+import logo from './logo.Alt_Nodejs\colegio-app\src\assets\Logo.jpeg';
 import './App.css';
 
 function App() {
