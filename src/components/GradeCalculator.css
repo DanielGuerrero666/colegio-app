@@ -1,0 +1,40 @@
+.grade-calculator {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .grade-calculator h2 {
+    color: #333;
+  }
+  
+  .grade-calculator form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .grade-calculator form div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .grade-calculator input {
+    padding: 8px;
+    font-size: 16px;
+    width: 200px;
+  }
+  
+  .grade-calculator button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .grade-calculator button:hover {
+    background-color: #45a049;
+  }
