@@ -1,40 +1,107 @@
 .grade-calculator {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 20px;
-  }
-  
-  .grade-calculator h2 {
-    color: #333;
-  }
-  
-  .grade-calculator form {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-  }
-  
-  .grade-calculator form div {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .grade-calculator input {
-    padding: 8px;
-    font-size: 16px;
-    width: 200px;
-  }
-  
-  .grade-calculator button {
-    padding: 10px;
-    font-size: 16px;
-    background-color: #4caf50;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  
-  .grade-calculator button:hover {
-    background-color: #45a049;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grade-calculator h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.grade-calculator form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+}
+
+.exam-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.grade-calculator label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.grade-calculator input {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-appearance: none;
+  -moz-appearance: textfield;
+  appearance: none;
+}
+
+.grade-calculator input::-webkit-inner-spin-button,
+.grade-calculator input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.grade-calculator .add-btn,
+.grade-calculator .calculate-btn,
+.grade-calculator .remove-btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.grade-calculator .add-btn {
+  background-color: #2196f3;
+  color: white;
+}
+
+.grade-calculator .add-btn:hover {
+  background-color: #1976d2;
+}
+
+.grade-calculator .calculate-btn {
+  background-color: #4caf50;
+  color: white;
+}
+
+.grade-calculator .calculate-btn:hover {
+  background-color: #45a049;
+}
+
+.grade-calculator .remove-btn {
+  background-color: #f44336;
+  color: white;
+}
+
+.grade-calculator .remove-btn:hover {
+  background-color: #d32f2f;
+}
+
+.grade-calculator p {
+  margin-top: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.grade-calculator .error {
+  color: red;
+  font-weight: normal;
+}
+
+.grade-calculator .success {
+  color: green;
+  font-weight: normal;
+}
