@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 20px;
-  max-width: 500px;
+  max-width: 600px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -16,8 +16,29 @@
 .grade-calculator form {
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 20px;
   width: 100%;
+}
+
+.group {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 15px;
+  background-color: #f9f9f9;
+}
+
+.group-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.exams {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
 .exam-row {
@@ -44,7 +65,7 @@
   border-radius: 4px;
   -webkit-appearance: none;
   -moz-appearance: textfield;
-  appearance: none;
+  appearance: textfield;
 }
 
 .grade-calculator input::-webkit-inner-spin-button,
@@ -53,9 +74,11 @@
   margin: 0;
 }
 
-.grade-calculator .add-btn,
+.grade-calculator .add-group-btn,
+.grade-calculator .add-exam-btn,
 .grade-calculator .calculate-btn,
-.grade-calculator .remove-btn {
+.grade-calculator .remove-btn,
+.grade-calculator .remove-group-btn {
   padding: 8px 12px;
   font-size: 14px;
   border: none;
@@ -63,13 +86,22 @@
   cursor: pointer;
 }
 
-.grade-calculator .add-btn {
+.grade-calculator .add-group-btn {
   background-color: #2196f3;
   color: white;
 }
 
-.grade-calculator .add-btn:hover {
+.grade-calculator .add-group-btn:hover {
   background-color: #1976d2;
+}
+
+.grade-calculator .add-exam-btn {
+  background-color: #ff9800;
+  color: white;
+}
+
+.grade-calculator .add-exam-btn:hover {
+  background-color: #f57c00;
 }
 
 .grade-calculator .calculate-btn {
@@ -81,12 +113,14 @@
   background-color: #45a049;
 }
 
-.grade-calculator .remove-btn {
+.grade-calculator .remove-btn,
+.grade-calculator .remove-group-btn {
   background-color: #f44336;
   color: white;
 }
 
-.grade-calculator .remove-btn:hover {
+.grade-calculator .remove-btn:hover,
+.grade-calculator .remove-group-btn:hover {
   background-color: #d32f2f;
 }
 
@@ -94,6 +128,13 @@
   margin-top: 15px;
   font-size: 18px;
   font-weight: bold;
+}
+
+.grade-calculator .weight-sum,
+.grade-calculator .sub-weight-sum {
+  font-size: 16px;
+  font-weight: normal;
+  color: #555;
 }
 
 .grade-calculator .error {
